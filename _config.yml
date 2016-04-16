@@ -1,18 +1,19 @@
 # Site settings
 title: Zyten Space
-description: 'zyten.github.io'
+description: 'Just another blog'
 url: 'http://zyten.github.io'
 baseurl: '/'
+future: true
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
   name: 'zyten'
   email: hackeduser@hackermail.com
-  twitter_username: zyten
-  facebook_username: zyten
+  #twitter_username: 
+  #facebook_username:
   github_username:  zyten
-  linkedin_username:  zyten
+  linkedin_username:  rubanselvarajah
 
 defaults:
   -
