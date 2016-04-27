@@ -6,9 +6,8 @@ tags: [freebies]
 ---
 
 [//]: # (This may be the most platform independent comment)
-<!-- ![My helpful screenshot]({{ site.url }}/assets/2016-04-27/github-student-developer-pack.png) -->
-
-![Github Student Developer Pack](http://localhost:4000/assets/2016-04-27/github-student-developer-pack.png)
+![Github Student Developer Pack]({{ site.url }}/assets/2016-04-27/github-student-developer-pack.png)
+<!-- ![Github Student Developer Pack](http://localhost:4000/assets/2016-04-27/github-student-developer-pack.png) -->
 
 If you are not already aware, [GitHub](http://github.com "GitHub") is a web-based Git repository hosting service as well as a social coding site. 
 [Github Student Developer Pack](https://education.github.com/pack "GitHub Student Developer Pack") is a set of tools that are provided free of charge for students to help them create technical projects as well as learn how to use new tools.
