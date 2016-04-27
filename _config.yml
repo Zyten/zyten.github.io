@@ -1,6 +1,6 @@
 # Site settings
 title: Zyten Space
-description: 'Just another blog'
+description: 'Ramblings and some other stuff'
 url: 'http://zyten.github.io'
 baseurl: '/'
 future: true
