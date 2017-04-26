@@ -19,7 +19,7 @@ If you are not already aware, [GitHub](http://github.com "GitHub") is a web-base
 
 ### What You Need to Do
 
-1. Click **[**here**]**(https://education.github.com/pack "GitHub Student Developer Pack"){:target="_blank"}.
+1. Click [here](https://education.github.com/pack "GitHub Student Developer Pack").
 2. Log into your GitHub account (or Register if you don't have one).
 3. Follow the steps there. 
 4. Wait for a confirmation email and you are done!
