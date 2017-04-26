@@ -10,4 +10,6 @@ Opinions are my own. Code snippets are licensed under MIT.
 
 Follow me on Github, connect on Linkedin or just drop me an email.
 
+{% comment %}
 {% include footer.html %}
+{% endcomment %}
