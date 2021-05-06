@@ -3,12 +3,12 @@
   "version": "2.0.0",
   "description": "Zyten's Web",
   "main": "index.html",
-	"scripts": {
-		"dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-	},
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Zyten/zyten.github.io.git"
@@ -17,14 +17,14 @@
   "license": "SEE LICENSE IN <LICENSE>",
   "homepage": "http://devicon.fr/",
   "dependencies": {
-    "devicon": "^2.0.0",
-    "laravel-mix": "^4.1.2",
-		"copy-webpack-plugin": "^4.0.1",
-		"cross-env": "^3.2.3",
-		"imagemin-mozjpeg": "^6.0.0",
-		"imagemin-gifsicle": "^6.0.0",
-		"imagemin-webpack-plugin": "^1.4.4",
-		"purify-css": "^1.2.5",
-		"purifycss-webpack": "^0.7.0"
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^3.2.3",
+    "devicon": "^2.11.0",
+    "imagemin-gifsicle": "^6.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "laravel-mix": "^6.0.18",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0"
   }
 }
