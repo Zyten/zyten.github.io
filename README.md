@@ -1,3 +1,1 @@
-:bowtie: 私のホームページは ここで - http://sruban.me
-
-:speech_balloon:
+:globe_with_meridians: [sruban.me](https://sruban.me)
