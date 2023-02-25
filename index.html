@@ -1,67 +1,653 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Ruban Selvarajah - Personal Resume &amp; Portfolio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="shortcut icon" href="favicon.png">
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="dark">
+  <!--<![endif]-->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<style>
+    <meta name="description" content="Ruban Selvarajah" />
+    <meta name="author" content="Ruban Selvarajah" />
 
-	@media screen and (min-width: 381px) {
-		.title {
-			font-size: 5em;
-			display: inline-block;
-			color: #4A4A4A;
-		}
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
 
-		.image {
-			margin-top:.1em;
-			margin-right:.03em;
-			margin-left:.05em;
-			line-height: 128px;
-			text-align: center;
-		}
-	}
+    <title>It's me - Ruban</title>
 
-	@media screen and (max-width: 380px) {
-		.title {
-			font-size: 4em !important;
-		}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /Google Fonts -->
 
-		.image {
-			margin-top:.1em;
-			height: 115px !important;
-			width: 115px !important;
-			line-height: 115px !important;
-			text-align: center;
-		}
-	}
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="public/css/base.css?ver=4" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="public/css/animated-headlines.css?ver=4"
+    />
+    <link type="text/css" rel="stylesheet" href="public/css/style.css?ver=4" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css"
+      integrity="sha512-X2hbziex+UPQ+KdI4BWI+39jEDhf2Smc6bfFI/FTIzWnt7mbwZCUU4RWalnMfxtHCpISlexzmd2kvPFJCliiPA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="public/js/modernizr.custom.js"></script>
+    <![endif]-->
+    <!-- /Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        important: true,
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                200: "#eeeeee",
+              },
+              onyx: "#393939",
+              deebo: "#3452ff",
+              tundora: "#444444",
+              "dark-charcoal": "#333",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
 
-	img {
-		vertical-align: bottom !important;
-	}
-	</style>
-</head>
-<body>
-	<section class="hero is-fullheight is-default is-bold">
-		<div class="hero-body">
-			<div class="container has-text-centered">
-				<h1 class="title">Coming Soon</h1>
-				<nav class="level">
-					<div class="level-item has-text-centered">
-						<figure class="is-desktop title image is-128x128 is-vcentered">
-							<img src="/	public/assets/interested-face.gif" alt="0"/>
-						</figure>
-					</div>
-				</nav>
-				<br>
-			</div>
-		</div>
-	</section>
-</body>
+  <body>
+    <div class="deebo_fn_main">
+      <!-- Light/Dark Switcher -->
+      <div class="deebo_fn_switcher_wrap">
+        <label>
+          <span class="light">Light</span>
+          <span class="checkbox_wrap">
+            <input type="checkbox" id="skin_switcher" checked />
+            <span class="slider round"></span>
+          </span>
+          <span class="dark">Dark</span>
+        </label>
+      </div>
+      <!-- /Light/Dark Switcher -->
+
+      <!-- Modal CV Card -->
+      <div class="deebo_fn_cv">
+        <!-- CV Inner -->
+        <div class="deebo_fn__cv">
+          <!-- CV Background -->
+          <div class="cv__bg"></div>
+          <div class="cv__bg2"></div>
+          <!-- /CV Background -->
+
+          <!-- CV Left Side -->
+          <div class="cv__header mb-6 md:mt-0 md:mb-0">
+            <div class="in">
+              <div class="mb-6 md:hidden content">
+                <div class="avatar flex justify-center pb-5">
+                  <img src="public/img/hi.png" alt="">
+                </div>
+                <div class="my_self">
+                  <h4>Hello! I'm</h4>
+                  <h3><span>Ruban</span> Selvarajah</h3>
+                  <h2>
+                    <!-- It is animation title. You can change animation variation by changing extra class to one of next classes: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push. cd-headline class can not be removed.  -->
+                    <span class="cd-headline clip">
+                      <span class="cd-words-wrapper">
+                        <b class="is-visible">Developer</b>
+                        <b>Consultant</b>
+                        <b>Freelancer</b>
+                      </span>
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <h3 class="hidden md:block"><span>Ruban</span> Selvarajah</h3>
+              <p class="hidden md:block quote">I build efficient and scalable web
+                applications using modern design frameworks with a primary focus on the backend and server-side optimisations.</p>
+              <ul class="contact_info hidden md:block">
+                <li>
+                  <span class="icon"
+                    ><img src="public/svg/location.svg" alt="" class="fn__svg"
+                  /></span>
+                  <p>Kuala Lumpur, Malaysia</p>
+                </li>
+                <li>
+                  <span class="icon"
+                    ><img src="public/svg/call.svg" alt="" class="fn__svg"
+                  /></span>
+                  <p><a href="tel:+601154076240">(+60) 11-5407 6240</a></p>
+                </li>
+                <li>
+                  <span class="icon"
+                    ><img src="public/svg/message.svg" alt="" class="fn__svg"
+                  /></span>
+                  <p><a href="mailto:sruban.works@gmail.com">sruban.works@gmail.com</a></p>
+                </li>
+              </ul>
+              <ul class="justify-center mb-5 social">
+                <li>
+                  <a
+                    href="https://github.com/zyten/"
+                    hover
+                    target="_blank"
+                    title="Github"
+                  >
+                    <span
+                      class="absolute w-4 h-4 mb-0 mr-0 -mt-2 -ml-2 left-2/4 top-2/4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rubanselvarajah/"
+                    target="_blank"
+                    title="LinkedIn"
+                  >
+                    <span
+                      class="absolute w-4 h-4 mb-0 mr-0 -mt-2 -ml-2 left-2/4 top-2/4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/601154076240"
+                    target="_blank"
+                    title="WhatsApp"
+                  >
+                    <span
+                      class="absolute w-4 h-4 mb-0 mr-0 -mt-2 -ml-2 left-2/4 top-2/4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/zyten" target="_blank" title="Telegram">
+                    <span
+                      class="absolute w-4 h-4 mb-0 mr-0 -mt-2 -ml-2 left-2/4 top-2/4"
+                    >
+                      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewbox="0 0 24 24"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xml:space="preserve"
+                        xmlns:serif="http://www.serif.com/"
+                        style="
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 1.41421;
+                        "
+                      >
+                        <path
+                          id="telegram-1"
+                          d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="hidden">
+                  <a
+                    href="https://twitter.com/misterruban"
+                    target="_blank"
+                    title="Twitter"
+                  >
+                    <span
+                      class="absolute w-4 h-4 mb-0 mr-0 -mt-2 -ml-2 left-2/4 top-2/4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap flex-row">
+                  <a
+                    target="_blank"
+                    href="https://www.dropbox.com/s/4r0944vfyk8x2hu/Ruban%20Selvarajah%20-%20Resume%20-%20090620.pdf"
+                    class="flex-1 block w-50 p-2 md:p-5 text-lg font-semibold leading-6 text-center no-underline uppercase truncate whitespace-no-wrap border-2 border-solid rounded-full text-dark-charcoal dark:text-gray-200 border-onyx hover:border-deebo hover:text-deebo hover:outline-1 hover:outline-dashed hover:outline-tundora"
+                    >
+                    CV</a
+                    >&nbsp;
+                    <a
+                    target="_blank"
+                    href="https://zyten.hashnode.dev/"
+                    class="flex-1 block w-50 p-2 md:p-5 text-lg font-semibold leading-6 text-center no-underline uppercase truncate whitespace-no-wrap border-2 border-solid rounded-full text-dark-charcoal dark:text-gray-200 border-onyx hover:border-deebo hover:text-deebo hover:outline-1 hover:outline-dashed hover:outline-tundora"
+                  >
+                    Blog</a
+                  >
+              </div>
+              <br>
+            </div>
+          </div>
+          <!-- /CV Left Side -->
+
+          <!-- /CV Content Side -->
+          <div class="cv__content">
+            <section id="hero-header" class="section_header hidden md:block">
+              <div class="content">
+                <div class="w-auto left_hero_header">
+                  <div class="circle">
+                    <div class="bg_img" data-bg-img="public/img/hi.png"></div>
+                    <img src="public/img/thumb/square.jpg" alt="" />
+                    <div class="circle_holder_blue"><span></span></div>
+                    <div class="circle_holder_orange"><span></span></div>
+                    <div class="lines">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="right_hero_header">
+                  <div class="my_self">
+                    <h4>Hello! I'm a</h4>
+                    <h2>
+                      <!-- It is animation title. You can change animation variation by changing extra class to one of next classes: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push. cd-headline class can not be removed.  -->
+                      <span class="cd-headline clip">
+                        <span class="cd-words-wrapper">
+                          <b class="is-visible">Developer</b>
+                          <b>Consultant</b>
+                          <b>Freelancer</b>
+                        </span>
+                      </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CV: Biography Section -->
+            <section id="cv_biography" class="md:hidden">
+              <div class="section_title">
+                <h3>Biography</h3>
+              </div>
+              <p>
+                I'm a remote Web Developer from Malaysia. I build efficient and scalable web
+                applications using modern design frameworks with a primary focus on the backend and server-side optimisations. 
+              </p>
+            </section>
+            <!-- /CV: Biography Section -->
+
+            <!-- CV: Experience Section -->
+            <section id="cv_experience">
+              <div class="section_title">
+                <h3>Experience</h3>
+              </div>
+              <div class="fn_cs_boxed_list">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>Titanium Studios</h5>
+                        <span>( 2022 — Today )</span>
+                      </div>
+                      <h3>Senior Web Developer</h3>
+                      <p>
+                        Involved in the implementation of miscelleanous
+                        integrations for ERPNext and Moodle.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>Titanium Studios</h5>
+                        <span>( 2019 — 2022 )</span>
+                      </div>
+                      <h3>Web Developer</h3>
+                      <p>
+                        Primarily worked with Moodle and Wordpress, catering to
+                        clients in the banking domain. Additionally, managed the
+                        company's cloud infrastructure in GKE, orchestracted
+                        using Terraform, Docker and Helm.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>Hafizhaffaz Technology</h5>
+                        <span>( 2018 — 2019 )</span>
+                      </div>
+                      <h3>Lead Developer</h3>
+                      <p>
+                        Launched fullstack web systems using Bootstrap, Laravel 5 
+                        and MySQL. Also heavily involved in setting up an Agile 
+                        project management environment for the team using SCRUM 
+                        and Trello that ensured coherent and transparent communication 
+                        throughout development.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>GATES IT Solution</h5>
+                        <span>( 2016 — 2017 )</span>
+                      </div>
+                      <h3>System Analyst Programmer</h3>
+                      <p>
+                        Handled web system development using Laravel 5 and
+                        Oracle 11, working an average of 45 hours per week.
+                        Exposed to writing reusable, extensible code using MVC
+                        while meeting business requirements.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- /CV: Experience Section -->
+
+            <!-- CV: Education Section -->
+            <section id="cv_education">
+              <div class="section_title">
+                <h3>Qualifications</h3>
+              </div>
+              <div class="fn_cs_boxed_list">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>Universiti Tun Hussein Onn Malaysia (UTHM)</h5>
+                        <span>( 2013 — 2017 )</span>
+                      </div>
+                      <h3 class="mb-0">BCompSc Software Engineering</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="item_top">
+                        <h5>International Requirements Engineering Board</h5>
+                        <span>( 2015 )</span>
+                      </div>
+                      <h3 class="mb-0">CPRE/FL</h3>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- /CV: Education Section -->
+
+            <!-- CV: Skills Section -->
+            <section id="cv_skills">
+              <div class="section_title">
+                <h3>Skills</h3>
+              </div>
+
+              <div class="container mx-auto">
+                <div class="flex flex-wrap">
+                  <div
+                    title="HTML"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-html5-plain colored"></i>
+                  </div>
+                  <div
+                    title="CSS"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-css3-plain colored"></i>
+                  </div>
+                  <div
+                    title="Javascript"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-javascript-plain colored"></i>
+                  </div>
+                  <div
+                    title="Bootstrap"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-bootstrap-plain colored"></i>
+                  </div>
+                  <div
+                    title="Laravel"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r :border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-laravel-plain colored"></i>
+                  </div>
+                  <div
+                    title="Moodle"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-moodle-plain colored"></i>
+                  </div>
+                  <div
+                    title="Docker"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-docker-plain colored"></i>
+                  </div>
+                  <div
+                    title="Google Cloud"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-googlecloud-plain colored"></i>
+                  </div>
+                  <div
+                    title="Kubernetes"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-kubernetes-plain colored"></i>
+                  </div>
+                  <div
+                    title="Trello"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-trello-plain colored"></i>
+                  </div>
+                  <div
+                    title="VSCode"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-vscode-plain colored"></i>
+                  </div>
+                  <div
+                    title="Git"
+                    class="flex items-center justify-center w-3/12 pb-16 border-gray-200 xl:w-1/6 lg:w-1/6 md:w-1/6 sm:justify-start xl:border-b lg:border-b xl:border-r lg:border-r xl:pb-10"
+                  >
+                    <i class="text-5xl sm:text-6xl md:text-7xl devicon-git-plain colored"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /CV: Skills Section -->
+
+            <section id="contact" class="section_contact">
+              <div class="section_title">
+                <h3>Contact Me</h3>
+              </div>
+
+              <form
+                class="contact_form"
+                id="form-contact-me"
+                action="https://formspree.io/f/xyyawqwd"
+                method="POST"
+              >
+                <div class="success">
+                  <p id="form-contact-me-status"></p>
+                </div>
+                <div class="empty_notice">
+                  <span>Please Fill Required Fields!</span>
+                </div>
+
+                <div class="items_wrap">
+                  <div class="items">
+                    <div class="item half">
+                      <div class="input_wrapper">
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          placeholder="Name *"
+                        />
+                      </div>
+                    </div>
+                    <div class="item half">
+                      <div class="input_wrapper">
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="Email *"
+                        />
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="input_wrapper">
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <a
+                        class="btn"
+                        href="javascript:$('#form-contact-me').submit();"
+                        id="send_message"
+                        >Send Message</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+          <!-- /CV Content Side -->
+        </div>
+        <!-- CV Inner -->
+      </div>
+      <!-- /Modal CV Card -->
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="public/js/jquery.js?ver=4"></script>
+    <script type="text/javascript" src="public/js/isotope.js"></script>
+    <script
+      type="text/javascript"
+      src="public/js/animated-headlines.js?ver=4"
+    ></script>
+    <!--[if lt IE 10]>
+      <script type="text/javascript" src="public/js/ie8.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="public/js/init.js?ver=4"></script>
+    <!-- /Scripts -->
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        document.body.classList.remove('light')
+        document.getElementById('skin_switcher').checked = true;
+      } else {
+        document.documentElement.classList.remove('dark')
+        document.body.classList.add('light')
+        document.getElementById('skin_switcher').checked = false;
+      }
+    </script>
+    <script>
+      var form = document.getElementById("form-contact-me");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("form-contact-me-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>
-
